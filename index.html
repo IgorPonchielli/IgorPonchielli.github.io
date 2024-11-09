@@ -1,114 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso IA - Igor Ponchielli</title>
+    <title>Igor Ponchielli</title>
     <!-- Bootstrap CDN -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Maven+Pro:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
-    <style>
-        :root {
-            --azul: #0091C8;
-            --amarelo: #F7DC6F;
-            --cinza-escuro: #444444;
-            --cinza-prata: #CDCDCD;
-            --branco: #EBEBDA;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            color: var(--cinza-escuro);
-            background-color: var(--branco);
-        }
-
-        .navbar {
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .nav-link {
-            color: var(--cinza-escuro) !important;
-            font-weight: 600;
-        }
-
-        .nav-link:hover {
-            color: var(--azul) !important;
-        }
-
-        .btn-primary {
-            background-color: var(--azul);
-            border-color: var(--azul);
-        }
-
-        .btn-primary:hover {
-            background-color: #007ab8;
-            border-color: #007ab8;
-        }
-
-        .btn-secondary {
-            background-color: var(--amarelo);
-            border-color: var(--amarelo);
-            color: var(--cinza-escuro);
-        }
-
-        .hero-section {
-            padding: 100px 0;
-            background-color: white;
-        }
-
-        .content-section {
-            padding: 80px 0;
-            background-color: var(--branco);
-        }
-
-        .course-card {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 10px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .course-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .price {
-            color: var(--azul);
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-
-        .footer {
-            background-color: var(--cinza-escuro);
-            color: white;
-            padding: 40px 0;
-        }
-
-        .social-icons a {
-            color: white;
-            font-size: 1.5rem;
-            margin: 0 10px;
-            transition: color 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            color: var(--amarelo);
-        }
-    </style>
+    <!-- Style CSS -->
+    <link href="./css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Header/Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top px-lg-5 px-md-4 px-sm-0">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="/api/placeholder/150/50" alt="Logo do Curso" height="50">
+                <img src="./images/logo_full_3.png" alt="Igor Ponchielli" height="50" class="logo-default">
+                <img src="./images/logo_full_4.png" alt="Igor Ponchielli" height="50" class="logo-scrolled">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -132,106 +47,220 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="mb-4">Domine a Inteligência Artificial</h1>
-                    <p class="lead mb-4">Aprenda a desenvolver soluções inovadoras com IA</p>
-                    <div class="price mb-4">R$ 997,00</div>
-                    <button class="btn btn-primary btn-lg">Comprar Agora</button>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <img src="/api/placeholder/500/500" alt="Igor Ponchielli" class="img-fluid">
+        <div class="container-fluid position-relative">
+            <div class="row align-items-center px-lg-5 px-md-4 px-sm-0">
+                <div class="col-lg-6 col-xl-4 position-relative z-3">
+                    <h1 class="hero-title">DOMINE A INTELIGÊNCIA ARTIFICIAL</h1>
+                    <p class="hero-subtitle montserrat">Aprenda a desenvolver soluções inovadoras com IA</p>
+                    <div class="price-tag">
+                        <span class="montserrat">3x</span>
+                        <span class="amount montserrat">R$ 19,95</span>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="col-lg-6 hero-image"></div>
     </section>
-
-    <!-- Course Content -->
-    <section id="conteudo" class="content-section">
+    <section id="conteudo" class="modules-section position-relative">
         <div class="container">
-            <h2 class="text-center mb-5">Conteúdo do Curso</h2>
+            <h1 class="fira-code text-center mb-sm-2 mb-lg-5">
+                &lt;Conteúdo do Curso&gt;
+            </h1>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center bg-light p-4 feature-box mb-sm-1 mb-md-4">
+                        <div class="icon-container me-3">
+                            <img src="./images/icon_internet.png" alt="Online Icon" class="feature-icon">
+                        </div>
+                        <h3 class="montserrat mb-0 text-center">100% online</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center bg-light p-4 feature-box mb-sm-1 mb-md-4">
+                        <div class="icon-container me-3">
+                            <img src="./images/icon_clock.png" alt="Clock Icon" class="feature-icon">
+                        </div>
+                        <h3 class="montserrat mb-0 text-center">10 horas de vídeo</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center bg-light p-4 feature-box mb-4">
+                        <div class="icon-container me-3">
+                            <img src="./images/icon_cert.png" alt="Certificate Icon" class="feature-icon">
+                        </div>
+                        <h3 class="montserrat mb-0 text-center">Certificação</h3>
+                    </div>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="course-card">
-                        <h3>Introdução a IA</h3>
-                        <p>Fundamentos e conceitos de Prompt Engineering</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="course-card">
-                        <h3>Desenvolvimento com IA</h3>
-                        <p>Técnicas avançadas de desenvolvimento</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="course-card">
-                        <h3>Gerenciamento de Projetos</h3>
-                        <p>IA aplicada ao gerenciamento de projetos</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="course-card">
-                        <h3>Documentação Técnica</h3>
-                        <p>Criação de documentação eficiente com IA</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="course-card">
-                        <h3>Suporte Técnico</h3>
-                        <p>Otimização do suporte com ferramentas de IA</p>
+                <div class="col-md-12">
+                    <div class="module-card mb-5">
+                        <div class="position-relative d-flex">
+                            <div class="position-absolute start-0 top-50 translate-middle-y text-secondary fw-bold">
+                                <h3>&gt;</h3>
+                            </div>
+                            <div class="ms-4 flex-grow-1">
+                                <h3 class="mb-0">Introdução a IA:</h3>
+                                <p class="mb-3">Fundamentos de IA e Introdução ao Prompt Engineering</p>
+                            </div>
+                        </div>
+
+                        <div class="position-relative d-flex">
+                            <div class="position-absolute start-0 top-50 translate-middle-y text-secondary fw-bold">
+                                <h3>&gt;</h3>
+                            </div>
+                            <div class="ms-4 flex-grow-1">
+                                <h3 class="mb-0">Desenvolvimento com IA</h3>
+                                <p class="mb-3">Usando IA para otimizar o processo de codificação</p>
+                            </div>
+                        </div>
+
+                        <div class="position-relative d-flex">
+                            <div class="position-absolute start-0 top-50 translate-middle-y text-secondary fw-bold">
+                                <h3>&gt;</h3>
+                            </div>
+                            <div class="ms-4 flex-grow-1">
+                                <h3 class="mb-0">Gerenciamento de Projetos</h3>
+                                <p class="mb-3">Como IA pode melhorar a organização de tarefas</p>
+                            </div>
+                        </div>
+
+                        <div class="position-relative d-flex">
+                            <div class="position-absolute start-0 top-50 translate-middle-y text-secondary fw-bold">
+                                <h3>&gt;</h3>
+                            </div>
+                            <div class="ms-4 flex-grow-1">
+                                <h3 class="mb-0">Documentação Técnica</h3>
+                                <p class="mb-3">Usando IA para a criação de documentos</p>
+                            </div>
+                        </div>
+
+                        <div class="position-relative d-flex">
+                            <div class="position-absolute start-0 top-50 translate-middle-y text-secondary fw-bold">
+                                <h3>&gt;</h3>
+                            </div>
+                            <div class="ms-4 flex-grow-1">
+                                <h3 class="mb-0">Suporte Técnico</h3>
+                                <p class="mb-0">Ferramentas de IA para troubleshooting e resolução de problemas</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <img src="./images/icon_background_2.png" alt="Icon" class="icon-bottom-right-up">
     </section>
 
-    <!-- Demo Section -->
-    <section id="demo" class="content-section">
+    <section id="demo" class="content-section position-relative">
         <div class="container">
-            <h2 class="text-center mb-5">Aula Demonstrativa</h2>
-            <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="sobre" class="content-section">
-        <div class="container">
-            <h2 class="text-center mb-5">Sobre Igor Ponchielli</h2>
+            <h2 class="text-left mb-3 fira-code-light">// Aula Demo</h2>
             <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="col-lg-11 mb-5">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 text-center">
+                    <button class="btn btn-primary fw-bold rounded-4 px-5 text-uppercase fs-1 btn-shadow">
+                        COMPRE JÁ!
+                    </button>
+                </div>
+            </div>
+        </div>
+        <img src="./images/icon_background_1.png" alt="Icon" class="icon-bottom-left">
+    </section>
+
+    <section id="sobre" class="about-section position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="mb-4 text-center fira-code">( Sobre mim )</h2>
+                    <p class="text-center">Eu sou formado em Análise e Desenvolvimento de Sistemas e atuo como analista
+                        de negócios de TI, com experiência em ERP SAP e desenvolvimento. Estou sempre em busca de novas
+                        formas de otimizar o meu trabalho através da tecnologia.
+                        Apaixonado por aprender e conhecer novos lugares. Este curso é um reflexo do meu conhecimento e
+                        experiência de uso das ferramentas de IA e como elas podem revolucionar a maneira como
+                        trabalhamos.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./images/icon_background_2.png" alt="Icon" class="icon-bottom-right">
+    </section>
+
+    <section id="compre" class="content-section">
+        <div class="container">
+            <h2 class="text-center mb-5 fira-code-light"> Aprimore sua produtividade utilizando IA!</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 text-center">
+                    <button class="btn btn-primary fw-bold rounded-4 px-5 py-3 text-uppercase fs-1 btn-shadow">
+                        COMPRE AQUI
+                    </button>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-3">
+                <div class="col-12 col-md-6 text-center">
+                    <div class="price-tag-light text-dark p-2 rounded d-inline-block">
+                        <span class="montserrat">3x</span>
+                        <span class="amount montserrat">R$ 19,95</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+
+    <!-- <section class="form-section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4">
-                    <img src="/api/placeholder/150/50" alt="Logo do Curso" height="50">
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h2 class="mb-4">Inscreva-se e receba conteúdos gratuitos!</h2>
+                    <form id="subscribe-form">
+                        <input type="text" class="form-control" placeholder="Nome">
+                        <input type="email" class="form-control" placeholder="E-mail">
+                        <input type="tel" class="form-control" placeholder="Telefone">
+                        <button type="submit" class="btn btn-primary">Inscrever-se</button>
+                    </form>
                 </div>
-                <div class="col-md-4 text-center">
+            </div>
+        </div>
+    </section> -->
+
+    <footer>
+        <div class="container-fluid position-relative">
+            <div class="row align-items-center text-center text-md-start">
+                <!-- Logo -->
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <img src="./images/logo_1.png" alt="Igor Ponchielli" height="40" class="logo-default">
+                </div>
+                <!-- Social Icons -->
+                <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/igorponchielli/" class="mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/igor-ponchielli/" class="mx-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="mx-2"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="col-md-4 text-end">
-                    <p class="mb-0">Powered by AI</p>
+                <!-- Copyright Text -->
+                <div class="col-12 col-md-4 text-center text-md-end">
+                    <p class="mb-0">© 2024 Igor Ponchielli</p>
                 </div>
             </div>
         </div>
     </footer>
 
+
     <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <!-- JQuery JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <!-- Script Local JS -->
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
