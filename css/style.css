@@ -91,16 +91,16 @@ body {
     opacity: 1;
 }
 
-.hero-section {
+.home-section {
     background: var(--cinza-escuro);
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 150px 0;
     color: white;
     position: relative;
     overflow: hidden;
 }
 
-.hero-image {
+.home-image {
     position: absolute;
     top: 0;
     right: 0;
@@ -113,7 +113,7 @@ body {
     opacity: 0.9;
 }
 
-.hero-title {
+.home-title {
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-size: 4rem;
@@ -124,7 +124,7 @@ body {
     margin-bottom: 0px;
 }
 
-.hero-subtitle {
+.home-subtitle {
     font-size: 1.5rem;
     font-weight: 300;
     margin-bottom: 20px;
@@ -242,7 +242,7 @@ body {
 }
 
 .modules-section {
-    padding: 80px 0;
+    padding: 30px 0px 80px 0px;
     background-color: var(--cinza-prata);
 }
 
@@ -374,7 +374,7 @@ footer {
 @media (max-width: 767.98px) {
 
     /* Pequeno (sm) e menor */
-    .hero-title {
+    .home-title {
         font-size: 2rem;
     }
 
