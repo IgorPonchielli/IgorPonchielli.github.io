@@ -93,7 +93,7 @@ body {
 
 .home-section {
     background: var(--cinza-escuro);
-    min-height: 90vh;
+    min-height: 100vh;
     padding: 150px 0;
     color: white;
     position: relative;
